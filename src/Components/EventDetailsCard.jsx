@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 
 const EventDetailsCard = ({ details }) => {
@@ -9,7 +10,7 @@ const EventDetailsCard = ({ details }) => {
         <img className="object-cover w-[1280px]" src={image} alt="" />
         <div className="absolute z-10 bottom-0 w-full h-20 md:h-20 lg:h-24 bg-black bg-opacity-50"></div>
         <button className="absolute border-0
-        bottom-4 left-6 lg:bottom-5 lg:left-9 btn bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-800 text-white border-none rounded z-20 text-white">
+        bottom-4 left-6 lg:bottom-5 lg:left-9 btn bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-800 text-white border-none rounded z-20 ">
             Organize for ${price_for_organization}
         </button>
       </div>
