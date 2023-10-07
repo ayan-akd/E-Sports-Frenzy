@@ -1,51 +1,56 @@
 [
-    {
-      "id": 1,
-      "name": "Summoner's Showdown 2023",
-      "image": "https://i.ibb.co/ZNdwCWd/1.jpg",
-      "price_for_organization": 100000,
-      "short_description": "Summoner's Showdown 2023 is the pinnacle of League of Legends esports. Experience the epic battle for supremacy on Summoner's Rift as top teams from around the world clash in this highly anticipated event.",
-      "description": "Summoner's Showdown 2023 is the ultimate League of Legends esports championship. It brings together the best teams from across the globe to compete in a thrilling battle for supremacy on the iconic Summoner's Rift. With a diverse roster of champions, intricate strategies, and fierce competition, this event promises to deliver an unforgettable experience for players and fans alike."
-    },
-    {
-      "id": 2,
-      "name": "Dota 2 World Championship 2023",
-      "image": "https://i.ibb.co/0rTbtdL/2.jpg",
-      "price_for_organization": 90000,
-      "short_description": "The Dota 2 World Championship 2023 is where strategy and teamwork reign supreme. In this highly competitive MOBA, top-tier teams compete on the grand stage using a diverse cast of heroes, each with their own special abilities.",
-      "description": "Welcome to the Dota 2 World Championship 2023, where strategy and teamwork take center stage. This prestigious event gathers the world's finest teams, all vying for glory in the realm of Dota 2. With a diverse lineup of heroes, intricate tactics, and breathtaking plays, this championship promises to showcase the very best that esports has to offer."
-    },
-    {
-      "id": 3,
-      "name": "Counter-Strike Masters 2023",
-      "image": "https://i.ibb.co/1YVV943/3.webp",
-      "price_for_organization": 80000,
-      "short_description": "Immerse yourself in the world of Counter-Strike Masters 2023, the pinnacle of tactical shooting and precision aiming. As counter-terrorist and terrorist operatives face off, top teams from around the world engage in high-stakes, team-based combat scenarios.",
-      "description": "Step into the thrilling world of Counter-Strike Masters 2023, where tactical shooting and precision aiming reach their zenith. Elite counter-terrorist and terrorist operatives from across the globe converge in intense team-based combat scenarios. With realistic weapons, meticulously designed maps, and strategic gameplay, Counter-Strike Masters 2023 offers an esports spectacle like no other."
-    },
-    {
-      "id": 4,
-      "name": "Overwatch Champions League 2023",
-      "image": "https://i.ibb.co/G7VhrmS/overwatch-4k-heroes-league-7swd5mitgdjchdgz.jpg",
-      "price_for_organization": 70000,
-      "short_description": "In Overwatch Champions League 2023, heroes never die, and the world needs saving. Join the ranks of unique heroes, each with their own extraordinary abilities, as top teams compete for glory.",
-      "description": "Join us for the Overwatch Champions League 2023, where heroes never die, and the world relies on their extraordinary abilities. Top teams from around the globe come together to compete for glory, showcasing their unique hero skills and teamwork. With fast-paced action, a rich narrative, and a dynamic world, this league offers a thrilling esports experience."
-    },
-    {
-      "id": 5,
-      "name": "Rainbow Six Siege Invitational 2023",
-      "image": "https://i.ibb.co/94DPdPk/5.jpg",
-      "price_for_organization": 60000,
-      "short_description": "Enter the world of tactical warfare and strategy at the Rainbow Six Siege Invitational 2023. Elite special forces operatives from around the world compete in this first-person shooter, where teamwork, communication, and strategy are crucial.",
-      "description": "Prepare for the Rainbow Six Siege Invitational 2023, an elite competition where tactical warfare and strategic mastery take center stage. Elite special forces operatives from around the world gather to compete in this first-person shooter, where teamwork, communication, and strategic planning are paramount. With destructible environments and a realistic approach to combat, this event promises intense and competitive esports action."
-    },
-    {
-      "id": 6,
-      "name": "Valorant Championship Series 2023",
-      "image": "https://i.ibb.co/gFXLvTB/6.webp",
-      "price_for_organization": 65000,
-      "short_description": "Experience the fusion of tactical shooting and supernatural abilities at the Valorant Championship Series 2023. Set in a near-future world, top teams of agents with unique abilities battle for supremacy in this strategic showdown.",
-      "description": "Experience the thrilling fusion of tactical shooting and supernatural abilities at the Valorant Championship Series 2023. Set in a near-future world, top teams of agents with unique abilities battle for supremacy in this high-stakes strategic showdown. Precision gunplay, strategic planning, and coordinated teamwork are essential in Valorant's fast-paced matches. With a rapidly growing competitive scene, the Valorant Championship Series 2023 is a must-watch for fans of tactical shooters."
-    }
-  ]
-  
+  {
+    "id": 1,
+    "name": "Summoner's Showdown 2023",
+    "image": "https://i.ibb.co/ZNdwCWd/1.jpg",
+    "price_for_organization": 100000,
+    "short_description": "Summoner's Showdown 2023 is the pinnacle of League of Legends esports. Experience the epic battle for supremacy on Summoner's Rift as top teams from around the world clash in this highly anticipated event.",
+    "description": "Summoner's Showdown 2023 is the ultimate League of Legends esports championship. It brings together the best teams from across the globe to compete in a thrilling battle for supremacy on the iconic Summoner's Rift. With a diverse roster of champions, intricate strategies, and fierce competition, this event promises to deliver an unforgettable experience for players and fans alike.",
+    "lists": "Package includes:\n- Access to all tournament matches\n- Exclusive meet-and-greet sessions with pro players\n- Behind-the-scenes tour of the event venue\n- Official event merchandise and swag\n- VIP seating and access to premium viewing areas\n- Catered meals and refreshments throughout the event\n- Chance to win exclusive in-game items and skins"
+  },
+  {
+    "id": 2,
+    "name": "Dota 2 World Championship 2023",
+    "image": "https://i.ibb.co/0rTbtdL/2.jpg",
+    "price_for_organization": 90000,
+    "short_description": "The Dota 2 World Championship 2023 is where strategy and teamwork reign supreme. In this highly competitive MOBA, top-tier teams compete on the grand stage using a diverse cast of heroes, each with their own special abilities.",
+    "description": "Welcome to the Dota 2 World Championship 2023, where strategy and teamwork take center stage. This prestigious event gathers the world's finest teams, all vying for glory in the realm of Dota 2. With a diverse lineup of heroes, intricate tactics, and breathtaking plays, this championship promises to showcase the very best that esports has to offer.",
+    "lists": "Package includes:\n- Access to all tournament matches\n- Exclusive player panels and strategy sessions\n- Autograph and photo opportunities with Dota 2 pros\n- Priority seating for the Grand Finals\n- Exclusive Dota 2 merchandise and collectibles\n- Complimentary Dota 2 in-game item codes\n- VIP lounge access and catering services"
+  },
+  {
+    "id": 3,
+    "name": "Counter-Strike Masters 2023",
+    "image": "https://i.ibb.co/1YVV943/3.webp",
+    "price_for_organization": 80000,
+    "short_description": "Immerse yourself in the world of Counter-Strike Masters 2023, the pinnacle of tactical shooting and precision aiming. As counter-terrorist and terrorist operatives face off, top teams from around the world engage in high-stakes, team-based combat scenarios.",
+    "description": "Step into the thrilling world of Counter-Strike Masters 2023, where tactical shooting and precision aiming reach their zenith. Elite counter-terrorist and terrorist operatives from across the globe converge in intense team-based combat scenarios. With realistic weapons, meticulously designed maps, and strategic gameplay, Counter-Strike Masters 2023 offers an esports spectacle like no other.",
+    "lists": "Package includes:\n- Access to all tournament matches\n- Exclusive tactical workshops with pro players\n- Private tour of the tournament venue and production area\n- Limited edition Counter-Strike merchandise\n- Priority access to autograph sessions\n- Premium seating with a view of all the action\n- Complimentary in-game weapon skins and cases"
+  },
+  {
+    "id": 4,
+    "name": "Overwatch Champions League 2023",
+    "image": "https://i.ibb.co/G7VhrmS/overwatch-4k-heroes-league-7swd5mitgdjchdgz.jpg",
+    "price_for_organization": 70000,
+    "short_description": "In Overwatch Champions League 2023, heroes never die, and the world needs saving. Join the ranks of unique heroes, each with their own extraordinary abilities, as top teams compete for glory.",
+    "description": "Join us for the Overwatch Champions League 2023, where heroes never die, and the world relies on their extraordinary abilities. Top teams from around the globe come together to compete for glory, showcasing their unique hero skills and teamwork. With fast-paced action, a rich narrative, and a dynamic world, this league offers a thrilling esports experience.",
+    "lists": "Package includes:\n- Full access to all tournament matches and side events\n- Exclusive access to Overwatch developer Q&A sessions\n- Meet-and-greet sessions with Overwatch voice actors\n- Priority seating for the Grand Finals\n- Limited edition Overwatch collectibles and apparel\n- VIP lounge access with catered meals\n- In-game loot boxes and skins for all attendees"
+  },
+  {
+    "id": 5,
+    "name": "Rainbow Six Siege Invitational 2023",
+    "image": "https://i.ibb.co/94DPdPk/5.jpg",
+    "price_for_organization": 60000,
+    "short_description": "Enter the world of tactical warfare and strategy at the Rainbow Six Siege Invitational 2023. Elite special forces operatives from around the world compete in this first-person shooter, where teamwork, communication, and strategy are crucial.",
+    "description": "Prepare for the Rainbow Six Siege Invitational 2023, an elite competition where tactical warfare and strategic mastery take center stage. Elite special forces operatives from around the world gather to compete in this first-person shooter, where teamwork, communication, and strategic planning are paramount. With destructible environments and a realistic approach to combat, this event promises intense and competitive esports action.",
+    "lists": "Package includes:\n- Access to all Rainbow Six Siege tournament matches\n- Tactical strategy sessions with pro players and coaches\n- Exclusive access to Rainbow Six Siege developer presentations\n- Priority seating and views of intense firefights\n- Limited edition Rainbow Six Siege merchandise\n- VIP lounge access with catered meals and beverages\n- Chance to win in-game Rainbow Six Siege content"
+  },
+  {
+    "id": 6,
+    "name": "Valorant Championship Series 2023",
+    "image": "https://i.ibb.co/gFXLvTB/6.webp",
+    "price_for_organization": 65000,
+    "short_description": "Experience the fusion of tactical shooting and supernatural abilities at the Valorant Championship Series 2023. Set in a near-future world, top teams of agents with unique abilities battle for supremacy in this strategic showdown.",
+    "description": "Experience the thrilling fusion of tactical shooting and supernatural abilities at the Valorant Championship Series 2023. Set in a near-future world, top teams of agents with unique abilities battle for supremacy in this high-stakes strategic showdown. Precision gunplay, strategic planning, and coordinated teamwork are essential in Valorant's fast-paced matches. With a rapidly growing competitive scene, the Valorant Championship Series 2023 is a must-watch for fans of tactical shooters.",
+    "lists": "Package includes:\n- Access to all Valorant tournament matches\n- Tactical workshops and strategy sessions with pro agents\n- Exclusive access to Valorant developers for insights\n- VIP seating with the best views of the action\n- Limited edition Valorant collectibles and gear\n- VIP lounge access with premium catering\n- In-game Valorant weapon skins and agent unlocks for attendees"
+  }
+]

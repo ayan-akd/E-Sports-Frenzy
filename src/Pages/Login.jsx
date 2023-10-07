@@ -1,19 +1,73 @@
 import { Link } from "react-router-dom";
-
+import { BiLogoGoogle } from "react-icons/bi";
+import { useContext } from "react";
+import { AuthContext } from "../Components/AuthProvider";
+import toast from "react-hot-toast";
 
 const Login = () => {
-    const handleLogin = (e) =>{
-        e.preventDefault();
-        const email = e.target.email.value;
-        const password = e.target.password.value;
-        console.log(email, password);
-    }
+  const { googleLogin, signInUser } = useContext(AuthContext);
+  const handleLogin = (e) => {
+    e.preventDefault();
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+    console.log(email, password);
+    signInUser(email, password)
+      .then((result) => {
+        console.log(result);
+        toast("Login Successful", {
+          icon: "✅",
+          style: {
+            borderRadius: "10px",
+            background: "#333",
+            color: "#fff",
+          },
+        });
+      })
+      .catch((error) => {
+        toast(error.message, {
+          icon: "❌",
+          style: {
+            borderRadius: "10px",
+            background: "#333",
+            color: "#fff",
+          },
+        });
+      });
+  };
+  const handleGoogleLogin = () => {
+    googleLogin()
+      .then(() => {
+        toast("Login Successful", {
+          icon: "✅",
+          style: {
+            borderRadius: "10px",
+            background: "#333",
+            color: "#fff",
+          },
+        });
+      })
+      .catch((error) => {
+        toast(error.message, {
+          icon: "❌",
+          style: {
+            borderRadius: "10px",
+            background: "#333",
+            color: "#fff",
+          },
+        });
+      });
+  };
   return (
     <div className="max-w-screen-xl mx-auto">
       <div className="hero min-h-screen bg-base-200">
         <div className="hero-content flex-col gap-10">
           <div className="text-center">
-            <h1 className="text-5xl font-bold">Welcome Back, <span className="font-extrabold bg-clip-text text-transparent bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-600">GAMER</span></h1>
+            <h1 className="text-5xl font-bold">
+              Welcome Back,{" "}
+              <span className="font-extrabold bg-clip-text text-transparent bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-600">
+                GAMER
+              </span>
+            </h1>
           </div>
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
             <form onSubmit={handleLogin} className="card-body">
@@ -42,14 +96,30 @@ const Login = () => {
                 />
                 <label className="label">
                   <p className="label-text-alt mt-3 text-xl">
-                    Do not have an account? <Link to={"/register"}><span className="font-extrabold bg-clip-text text-transparent bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-600">Sign up</span></Link>
+                    Do not have an account?{" "}
+                    <Link to={"/register"}>
+                      <span className="font-extrabold bg-clip-text text-transparent bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-600">
+                        Sign up
+                      </span>
+                    </Link>
                   </p>
                 </label>
               </div>
-              <div className="form-control mt-6">
-                <button className="btn bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-800 text-white border-none">Login</button>
+              <div className="form-control mt-6 space-y-5">
+                <button className="btn bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-800 text-white border-none">
+                  Login
+                </button>
+                <p className="text-center">Or</p>
               </div>
             </form>
+            <div className="flex items-center justify-center mb-5 px-8">
+              <button
+                onClick={handleGoogleLogin}
+                className="btn w-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-800 text-white border-none"
+              >
+                <BiLogoGoogle></BiLogoGoogle>Login with Google
+              </button>
+            </div>
           </div>
         </div>
       </div>

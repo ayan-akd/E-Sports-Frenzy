@@ -9,6 +9,7 @@ import Blogs from "../Pages/Blogs";
 import EventDetails from "../Components/EventDetails";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
+import PrivateRoute from "./PrivateRoute";
 
   const Router = createBrowserRouter([
     {
@@ -23,16 +24,22 @@ import Register from "../Pages/Register";
         },
         {
           path: "/gallery",
-          element: <Gallery></Gallery>
+          element: <PrivateRoute>
+            <Gallery></Gallery>
+          </PrivateRoute>
         },
         {
           path: "/blogs",
-          element: <Blogs></Blogs>,
+          element: <PrivateRoute>
+            <Blogs></Blogs>
+          </PrivateRoute>,
           loader: () => fetch("/blogs.json"),
         },
         {
           path: "/events/:id",
-          element: <EventDetails></EventDetails>,
+          element: <PrivateRoute>
+            <EventDetails></EventDetails>
+          </PrivateRoute>,
           loader: () => fetch("/data.json"),
         },
         {

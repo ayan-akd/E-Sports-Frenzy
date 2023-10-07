@@ -1,28 +1,86 @@
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../Components/AuthProvider";
+import toast from "react-hot-toast";
 
 const Navbar = () => {
+  const { user, signOutUser } = useContext(AuthContext);
+  console.log(user);
+  const logOut = () => {
+    signOutUser()
+      .then(() => {
+        toast("Logout Successful", {
+          icon: "✅",
+          style: {
+            borderRadius: "10px",
+            background: "#333",
+            color: "#fff",
+          },
+        });
+      })
+      .catch((error) => {
+        toast(error.message, {
+          icon: "❌",
+          style: {
+            borderRadius: "10px",
+            background: "#333",
+            color: "#fff",
+          },
+        });
+      });
+  };
   const navLinks = (
     <>
       <li>
-        <NavLink className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "font-extrabold bg-clip-text text-transparent bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-600 mr-1" : "mr-1"
-              } to={"/"}>Home</NavLink>
+        <NavLink
+          className={({ isActive, isPending }) =>
+            isPending
+              ? "pending"
+              : isActive
+              ? "font-extrabold bg-clip-text text-transparent bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-600 mr-1"
+              : "mr-1"
+          }
+          to={"/"}
+        >
+          Home
+        </NavLink>
       </li>
       <li>
-        <NavLink className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "font-extrabold bg-clip-text text-transparent bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-600 mr-1" : "mr-1"
-              } to={"/gallery"}>Gallery</NavLink>
+        <NavLink
+          className={({ isActive, isPending }) =>
+            isPending
+              ? "pending"
+              : isActive
+              ? "font-extrabold bg-clip-text text-transparent bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-600 mr-1"
+              : "mr-1"
+          }
+          to={"/gallery"}
+        >
+          Gallery
+        </NavLink>
       </li>
       <li>
-        <NavLink className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "font-extrabold bg-clip-text text-transparent bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-600 mr-1" : "mr-1"
-              } to={"/blogs"}>Blogs</NavLink>
+        <NavLink
+          className={({ isActive, isPending }) =>
+            isPending
+              ? "pending"
+              : isActive
+              ? "font-extrabold bg-clip-text text-transparent bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-600 mr-1"
+              : "mr-1"
+          }
+          to={"/blogs"}
+        >
+          Blogs
+        </NavLink>
       </li>
-      
     </>
   );
   return (
-    <div data-aos="fade-down" data-aos-duration="2000" className="navbar bg-base-100 max-w-screen-xl mx-auto p-4">
+    <div
+      data-aos="fade-down"
+      data-aos-duration="2000"
+      className="navbar bg-base-100 max-w-screen-xl mx-auto p-4"
+    >
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -48,20 +106,45 @@ const Navbar = () => {
             {navLinks}
           </ul>
         </div>
-        <a className="normal-case text-lg md:text-3xl font-bold">
+        <Link to={"/"}><a className="normal-case text-lg md:text-3xl font-bold">
           E-Sports{" "}
           <span className="font-extrabold bg-clip-text text-transparent bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-600">
             Frenzy
           </span>
-        </a>
+        </a></Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 text-xl">{navLinks}</ul>
       </div>
       <div className="navbar-end">
-        <Link to={"/login"}><button className="btn lg:text-lg bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-800 text-white border-none">
-          Login
-        </button></Link>
+        {/* ternary section */}
+
+        {user ? (
+          <div className="dropdown dropdown-bottom flex items-center">
+            <p className="text-xl mr-5">{user?.displayName}</p>
+            <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+              <div className="w-10 rounded-full">
+                {
+                  user.photoURL ? <img src={user.photoURL} /> : <img src="/images/profile.svg" />
+                }
+              </div>
+            </label>
+            <ul
+              tabIndex={0}
+              className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box"
+            >
+              <li>
+                <a onClick={logOut}>Logout</a>
+              </li>
+            </ul>
+          </div>
+        ) : (
+          <Link to={"/login"}>
+            <button className="btn lg:text-lg bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-800 text-white border-none">
+              Login
+            </button>
+          </Link>
+        )}
       </div>
     </div>
   );
