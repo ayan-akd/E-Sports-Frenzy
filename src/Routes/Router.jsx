@@ -4,6 +4,7 @@ import {
 import Root from "../Root/Root";
 import Home from "../Pages/Home";
 import NotFound from "../Pages/NotFound";
+import Gallery from "../Pages/Gallery";
 
   const Router = createBrowserRouter([
     {
@@ -15,6 +16,10 @@ import NotFound from "../Pages/NotFound";
             path: "/",
             element: <Home></Home>,
             loader: () => fetch("/data.json"),
+        },
+        {
+          path: "/gallery",
+          element: <Gallery></Gallery>
         }
       ]
     },

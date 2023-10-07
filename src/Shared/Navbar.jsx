@@ -4,14 +4,16 @@ const Navbar = () => {
   const navLinks = (
     <>
       <li>
-        <NavLink className="mr-1" to={"/"}>Home</NavLink>
+        <NavLink className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "font-extrabold bg-clip-text text-transparent bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-600 mr-1" : "mr-1"
+              } to={"/"}>Home</NavLink>
       </li>
       <li>
-        <NavLink className="mr-1" to={"/about"}>About</NavLink>
+        <NavLink className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "font-extrabold bg-clip-text text-transparent bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-600 mr-1" : "mr-1"
+              } to={"/gallery"}>Gallery</NavLink>
       </li>
-      <li>
-        <NavLink className="mr-1" to={"/carrer"}>Carrer</NavLink>
-      </li>
+      
     </>
   );
   return (
