@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
 import { BiLogoGoogle } from "react-icons/bi";
 import { useContext } from "react";
 import { AuthContext } from "../Components/AuthProvider";
@@ -7,6 +7,8 @@ import { updateProfile } from "firebase/auth";
 
 const Register = () => {
   const { googleLogin, createUser } = useContext(AuthContext);
+  const navigate = useNavigate();
+  const location = useLocation();
   const handleRegister = (e) => {
     e.preventDefault();
     const name = e.target.name.value;
@@ -47,13 +49,14 @@ const Register = () => {
       });
       return;
     }
-    
+
     createUser(email, password)
       .then((result) => {
         updateProfile(result.user, {
-            displayName: name,
-            photoURL: photo,
-            });
+          displayName: name,
+          photoURL: photo,
+        });
+        navigate(location?.state ? location.state : "/");
         toast("Registered successfully", {
           icon: "✅",
           style: {
@@ -78,6 +81,7 @@ const Register = () => {
   const handleGoogleLogin = () => {
     googleLogin()
       .then(() => {
+        navigate(location?.state ? location.state : "/");
         toast("Registered successfully", {
           icon: "✅",
           style: {

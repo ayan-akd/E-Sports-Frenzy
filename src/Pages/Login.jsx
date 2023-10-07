@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
 import { BiLogoGoogle } from "react-icons/bi";
 import { useContext } from "react";
 import { AuthContext } from "../Components/AuthProvider";
@@ -6,14 +6,16 @@ import toast from "react-hot-toast";
 
 const Login = () => {
   const { googleLogin, signInUser } = useContext(AuthContext);
+  const navigate = useNavigate();
+  const location = useLocation();
   const handleLogin = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
     console.log(email, password);
     signInUser(email, password)
-      .then((result) => {
-        console.log(result);
+      .then(() => {
+        navigate(location?.state ? location.state : "/");
         toast("Login Successful", {
           icon: "✅",
           style: {
@@ -37,6 +39,7 @@ const Login = () => {
   const handleGoogleLogin = () => {
     googleLogin()
       .then(() => {
+        navigate(location?.state ? location.state : "/");
         toast("Login Successful", {
           icon: "✅",
           style: {
