@@ -15,7 +15,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div data-aos="fade-down" data-aos-duration="1000" className="navbar bg-base-100 max-w-screen-xl mx-auto p-4">
+    <div data-aos="fade-down" data-aos-duration="2000" className="navbar bg-base-100 max-w-screen-xl mx-auto p-4">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">

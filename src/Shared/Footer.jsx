@@ -7,7 +7,7 @@ import {
 const Footer = () => {
   return (
     <div className="bg-neutral">
-      <footer data-aos="fade-up" data-aos-duration="1000" className="footer p-10 text-neutral-content max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-center">
+      <footer data-aos="fade-up" data-aos-duration="2000" className="footer p-10 text-neutral-content max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-center">
         <aside className="flex items-center gap-6">
           <img className="w-14" src="/image_49.png" alt="" />
           <p className="text-xl lg:text-3xl">
