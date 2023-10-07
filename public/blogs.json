@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "title": "Intense Showdown: Join the Gaming Frenzy!",
+        "image": "https://images2.imgbox.com/c7/42/Cbv6Wguu_o.jpg",
+        "description": "Prepare for an electrifying gaming event filled with fierce competition and fantastic prizes!"
+    },
+    {
+        "id": 2,
+        "title": "Epic Battle Royale: Rise as the Ultimate Champion",
+        "image": "https://images2.imgbox.com/79/6c/ppKKukps_o.jpg",
+        "description": "Embark on a journey of epic battles in our gaming tournament. Can you claim the title of champion?"
+    },
+    {
+        "id": 3,
+        "title": "Battle Royale Challenge: Only the Strong Survive",
+        "image": "https://images2.imgbox.com/36/63/XKGVyv0d_o.jpg",
+        "description": "Test your skills in the ultimate battle royale challenge. Will you be the last one standing?"
+    },
+    {
+        "id": 4,
+        "title": "Retro Gaming Extravaganza: Nostalgia at Its Best",
+        "image": "https://images2.imgbox.com/b1/4b/KObUfZiH_o.jpg",
+        "description": "Relive the golden age of gaming in our retro gaming extravaganza. Get ready for a trip down memory lane!"
+    },
+    {
+        "id": 5,
+        "title": "Virtual Reality Showdown: Dive into the Future",
+        "image": "https://images2.imgbox.com/e7/c0/jfk70ifx_o.jpg",
+        "description": "Step into the world of virtual reality and engage in a thrilling showdown. Experience the future of gaming today!"
+    },
+    {
+        "id": 6,
+        "title": "Multiplayer Mayhem: Team Up or Go Solo!",
+        "image": "https://images2.imgbox.com/96/89/vBPIbOnh_o.jpg",
+        "description": "Join the multiplayer mayhem, form alliances, or challenge your rivals. It's all-out gaming chaos!"
+    }
+]

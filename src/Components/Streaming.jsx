@@ -1,6 +1,6 @@
 const Streaming = () => {
   return (
-    <div className="max-w-screen-xl mx-auto mb-16">
+    <div className="max-w-screen-xl mx-auto mb-16 p-3">
       <div data-aos="zoom-in" data-aos-duration="1500" className="text-center flex flex-col items-center gap-3">
         <p className="font-extrabold bg-clip-text text-transparent bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-600 text-xl italic">
           RATING & STATISTIC
