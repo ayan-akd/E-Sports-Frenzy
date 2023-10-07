@@ -1,8 +1,13 @@
-# React + Vite
+# E-Sports Frenzy by Ayan Kumar Das
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Project Name: E-Sports Frenzy
 
-Currently, two official plugins are available:
+## [ Private Live Link](https://akd-esports-frenzy.web.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 5 Project features
+
+- There is a slider in the banner.
+- There are 6 events in the events section with a link to see the details of those events.
+- There is a Login and Registration page to login to site.
+- There is a blog page and a gallery page in the site.
+- You can only see the event details, blogs, gallery pages only if you are logged in the site.

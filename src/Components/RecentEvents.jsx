@@ -11,9 +11,13 @@ const RecentEvents = () => {
           Events
         </span>
       </h1>
-      <div data-aos="flip-up" data-aos-duration="1500"  className="grid md:grid-cols-2 items-center justify-center gap-10">
+      <div className="grid md:grid-cols-2 items-center justify-center gap-10">
         {/* card 1 */}
-        <div className="card">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="1500"
+          className="card h-80"
+        >
           <div className="card-body">
             <h2 className="card-title text-2xl font-extrabold bg-clip-text text-transparent bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-600">
               Valorant
@@ -31,11 +35,17 @@ const RecentEvents = () => {
               </div>
               <img className="w-16" src="/images/TSM_Logo.svg" alt="" />
             </div>
-            <button className="btn mt-5 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-800 text-white border-none">Watch Now</button>
+            <button className="btn mt-5 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-800 text-white border-none">
+              Watch Now
+            </button>
           </div>
         </div>
         {/* card 2 */}
-        <div className="card">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="1500"
+          className="card h-80"
+        >
           <div className="card-body">
             <h2 className="card-title text-2xl font-extrabold bg-clip-text text-transparent bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-600">
               Rainbow Six Siege
@@ -53,11 +63,17 @@ const RecentEvents = () => {
               </div>
               <img className="w-16" src="/images/G2.png" alt="" />
             </div>
-            <button className="btn mt-5 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-800 text-white border-none">Watch Now</button>
+            <button className="btn mt-5 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-800 text-white border-none">
+              Watch Now
+            </button>
           </div>
         </div>
         {/* card 3 */}
-        <div className="card">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="1500"
+          className="card h-80"
+        >
           <div className="card-body">
             <h2 className="card-title text-2xl font-extrabold bg-clip-text text-transparent bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-600">
               Dota 2
@@ -75,11 +91,17 @@ const RecentEvents = () => {
               </div>
               <img className="w-16" src="/images/team-liquid.svg" alt="" />
             </div>
-            <button className="btn mt-5 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-800 text-white border-none">Watch Now</button>
+            <button className="btn mt-5 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-800 text-white border-none">
+              Watch Now
+            </button>
           </div>
         </div>
         {/* card 4 */}
-        <div className="card">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="1500"
+          className="card h-80"
+        >
           <div className="card-body">
             <h2 className="card-title text-2xl font-extrabold bg-clip-text text-transparent bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-600">
               CS:GO
@@ -97,7 +119,9 @@ const RecentEvents = () => {
               </div>
               <img className="w-16" src="/images/team-secret-logo.svg" alt="" />
             </div>
-            <button className="btn mt-5 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-800 text-white border-none">Watch Now</button>
+            <button className="btn mt-5 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-800 text-white border-none">
+              Watch Now
+            </button>
           </div>
         </div>
       </div>
