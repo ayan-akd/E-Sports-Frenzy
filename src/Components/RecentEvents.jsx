@@ -1,8 +1,8 @@
 const RecentEvents = () => {
   return (
-    <div className="mb-12 max-w-screen-xl mx-auto">
+    <div className="mb-12 max-w-screen-xl mx-auto overflow-hidden">
       <h1
-        data-aos="zoom-in-up"
+        data-aos="fade-down"
         data-aos-duration="2000"
         className="text-7xl text-center italic"
       >
@@ -14,7 +14,7 @@ const RecentEvents = () => {
       <div className="grid md:grid-cols-2 items-center justify-center gap-10">
         {/* card 1 */}
         <div
-          data-aos="fade-right"
+          data-aos="fade-down"
           data-aos-duration="1500"
           className="card h-80"
         >
@@ -42,7 +42,7 @@ const RecentEvents = () => {
         </div>
         {/* card 2 */}
         <div
-          data-aos="fade-left"
+          data-aos="fade-up"
           data-aos-duration="1500"
           className="card h-80"
         >
@@ -70,7 +70,7 @@ const RecentEvents = () => {
         </div>
         {/* card 3 */}
         <div
-          data-aos="fade-right"
+          data-aos="fade-down"
           data-aos-duration="1500"
           className="card h-80"
         >
@@ -98,7 +98,7 @@ const RecentEvents = () => {
         </div>
         {/* card 4 */}
         <div
-          data-aos="fade-left"
+          data-aos="fade-up"
           data-aos-duration="1500"
           className="card h-80"
         >

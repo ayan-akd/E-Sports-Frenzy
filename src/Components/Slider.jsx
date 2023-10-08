@@ -40,7 +40,7 @@ const Slider = () => {
 
   return (
     <>
-      <div ref={sliderRef} className="keen-slider h-auto object-cover absolute opacity-75" data-aos="fade-right" data-aos-duration="1000">
+      <div ref={sliderRef} className="keen-slider h-auto object-cover absolute opacity-75" data-aos="fade-down" data-aos-duration="1000">
         <div className="keen-slider__slide number-slide1"><img src="/images/2.webp" alt="" /></div>
         <div className="keen-slider__slide number-slide1"><img src="/images/3.webp" alt="" /></div>
         <div className="keen-slider__slide number-slide1"><img src="/images/4.webp" alt="" /></div>

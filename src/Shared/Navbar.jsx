@@ -105,7 +105,7 @@ const Navbar = () => {
             {navLinks}
           </ul>
         </div>
-        <Link to={"/"}><a className="normal-case text-lg md:text-3xl font-bold">
+        <Link to={"/"}><a className="normal-case text-xl md:text-3xl font-bold">
           E-Sports{" "}
           <span className="font-extrabold bg-clip-text text-transparent bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-600">
             Frenzy
@@ -116,11 +116,10 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1 text-xl">{navLinks}</ul>
       </div>
       <div className="navbar-end">
-        {/* ternary section */}
 
         {user ? (
-          <div className="dropdown dropdown-bottom flex items-center">
-            <p className="text-xl mr-5">{user?.displayName}</p>
+          <div className="dropdown dropdown-bottom dropdown-end flex items-center">
+            <p className="text-xl mr-2 md:mr-5">{user?.displayName}</p>
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
               <div className="w-10 rounded-full">
                 {

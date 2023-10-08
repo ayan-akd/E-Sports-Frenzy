@@ -1,4 +1,4 @@
-import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { BiLogoGoogle } from "react-icons/bi";
 import { useContext } from "react";
 import { AuthContext } from "../Components/AuthProvider";
@@ -125,6 +125,7 @@ const Register = () => {
                   type="text"
                   placeholder="Your Name....."
                   name="name"
+                  required
                   className="input input-bordered"
                 />
               </div>

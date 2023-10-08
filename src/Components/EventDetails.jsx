@@ -9,7 +9,6 @@ const EventDetails = () => {
   useEffect(() => {
     const findEvent = events?.find((event) => event.id == id);
     setDetails(findEvent);
-    console.log(findEvent);
   }, [id, events]);
   return <div>
     <EventDetailsCard details={details}></EventDetailsCard>

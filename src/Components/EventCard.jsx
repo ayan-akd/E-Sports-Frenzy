@@ -12,7 +12,7 @@ const EventCard = ({ events }) => {
         <h2 className="card-title">{name}</h2>
         <div>
           {short_description.length > 100 ? (
-            <p>{short_description.slice(0, 75)}.........</p>
+            <p>{short_description.slice(0, 75)}. . . . . .</p>
           ) : (
             short_description
           )}
