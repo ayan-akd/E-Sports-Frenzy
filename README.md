@@ -2,7 +2,7 @@
 
 Project Name: E-Sports Frenzy
 
-## [ Private Live Link](https://akd-esports-frenzy.web.app/)
+## [ Project Live Link](https://akd-esports-frenzy.web.app/)
 
 ## 5 Project features
 
