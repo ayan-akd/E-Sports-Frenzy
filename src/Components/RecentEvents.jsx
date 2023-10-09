@@ -1,6 +1,6 @@
 const RecentEvents = () => {
   return (
-    <div className="mb-12 max-w-screen-xl mx-auto overflow-hidden">
+    <div className="mb-12 max-w-screen-xl mx-auto">
       <h1
         data-aos="fade-down"
         data-aos-duration="2000"
@@ -11,7 +11,7 @@ const RecentEvents = () => {
           Events
         </span>
       </h1>
-      <div className="grid md:grid-cols-2 items-center justify-center gap-10">
+      <div className="grid mt-12 md:grid-cols-2 items-center justify-center gap-10">
         {/* card 1 */}
         <div
           data-aos="fade-down"
@@ -24,7 +24,7 @@ const RecentEvents = () => {
             </h2>
             <p>29 August 2023 | 07.00 PM</p>
             <div className="flex items-center justify-center gap-8 mt-5">
-              <img className="w-16" src="/images/NaVi_logo.svg" alt="" />
+              <img className="w-16 h-16" src="/images/NaVi_logo.svg" alt="" />
 
               <div className="flex justify-center gap-1 text-xl">
                 <h2 className="font-extrabold bg-clip-text text-transparent bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-600">
@@ -33,11 +33,13 @@ const RecentEvents = () => {
                 <h2>VS</h2>
                 <h2>2</h2>
               </div>
-              <img className="w-16" src="/images/TSM_Logo.svg" alt="" />
+              <img className="w-16 h-16" src="/images/TSM_Logo.svg" alt="" />
             </div>
-            <button className="btn mt-5 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-800 text-white border-none">
-              Watch Now
-            </button>
+            <a href="https://www.youtube.com/watch?v=o207AG0F2M8" target="_blank" rel="noreferrer">
+              <button className="btn w-full mt-5 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-800 text-white border-none">
+                Watch Now
+              </button>
+            </a>
           </div>
         </div>
         {/* card 2 */}
@@ -52,7 +54,7 @@ const RecentEvents = () => {
             </h2>
             <p>25 August 2023 | 07.00 PM</p>
             <div className="flex items-center justify-center gap-8 mt-5">
-              <img className="w-16" src="/images/TSM_Logo.svg" alt="" />
+              <img className="w-16 h-16" src="/images/TSM_Logo.svg" alt="" />
 
               <div className="flex justify-center gap-1 text-xl">
                 <h2 className="font-extrabold bg-clip-text text-transparent bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-600">
@@ -61,11 +63,13 @@ const RecentEvents = () => {
                 <h2>VS</h2>
                 <h2>1</h2>
               </div>
-              <img className="w-16" src="/images/G2.png" alt="" />
+              <img className="w-16 h-16" src="/images/G2.png" alt="" />
             </div>
-            <button className="btn mt-5 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-800 text-white border-none">
-              Watch Now
-            </button>
+            <a href="https://www.youtube.com/watch?v=ZJ_rC0GCAtU" target="_blank" rel="noreferrer">
+              <button className="btn w-full mt-5 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-800 text-white border-none">
+                Watch Now
+              </button>
+            </a>
           </div>
         </div>
         {/* card 3 */}
@@ -80,7 +84,7 @@ const RecentEvents = () => {
             </h2>
             <p>30 August 2023 | 07.00 PM</p>
             <div className="flex items-center justify-center gap-8 mt-5">
-              <img className="w-16" src="/images/team-secret-logo.svg" alt="" />
+              <img className="w-16 h-16" src="/images/team-secret-logo.svg" alt="" />
 
               <div className="flex justify-center gap-1 text-xl">
                 <h2>3</h2>
@@ -89,11 +93,13 @@ const RecentEvents = () => {
                   5
                 </h2>
               </div>
-              <img className="w-16" src="/images/team-liquid.svg" alt="" />
+              <img className="w-16 h-16" src="/images/team-liquid.svg" alt="" />
             </div>
-            <button className="btn mt-5 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-800 text-white border-none">
-              Watch Now
-            </button>
+            <a href="https://www.youtube.com/watch?v=xARmyiYdz3w" target="_blank" rel="noreferrer">
+              <button className="btn w-full mt-5 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-800 text-white border-none">
+                Watch Now
+              </button>
+            </a>
           </div>
         </div>
         {/* card 4 */}
@@ -108,7 +114,7 @@ const RecentEvents = () => {
             </h2>
             <p>2 September 2023 | 07.00 PM</p>
             <div className="flex items-center justify-center gap-8 mt-5">
-              <img className="w-16" src="/images/G2.png" alt="" />
+              <img className="w-16 h-16" src="/images/G2.png" alt="" />
 
               <div className="flex justify-center gap-1 text-xl">
                 <h2 className="font-extrabold bg-clip-text text-transparent bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-600">
@@ -117,11 +123,13 @@ const RecentEvents = () => {
                 <h2>VS</h2>
                 <h2>4</h2>
               </div>
-              <img className="w-16" src="/images/team-secret-logo.svg" alt="" />
+              <img className="w-16 h-16" src="/images/team-secret-logo.svg" alt="" />
             </div>
-            <button className="btn mt-5 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-800 text-white border-none">
-              Watch Now
-            </button>
+            <a href="https://www.youtube.com/watch?v=59bsb-mFitQ" target="_blank" rel="noreferrer">
+              <button className="btn w-full mt-5 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-500 to-red-800 text-white border-none">
+                Watch Now
+              </button>
+            </a>
           </div>
         </div>
       </div>

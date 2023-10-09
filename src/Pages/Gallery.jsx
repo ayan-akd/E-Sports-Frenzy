@@ -105,7 +105,7 @@ const Gallery = () => {
           Check Out photos taken by Our Professional Photographers
         </p>
       </div>
-      <ImageGallery items={images} showIndex={true} />;
+      <ImageGallery items={images} showIndex={true} />
     </div>
   );
 };

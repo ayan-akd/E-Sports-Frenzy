@@ -15,7 +15,7 @@ const Events = ({ events }) => {
         data-aos="fade-up"
         data-aos-easing="linear"
         data-aos-duration="2000"
-        className="grid lg:grid-cols-2 gap-6 my-10"
+        className="grid lg:grid-cols-2 gap-6 my-10 px-2"
       >
         {events.map((event) => (
           <EventCard key={event.id} events={event}></EventCard>
